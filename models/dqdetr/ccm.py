@@ -1,3 +1,8 @@
+# DQ-DETR
+# Copyright (c) 2022 IDEA. All Rights Reserved.
+# Licensed under the Apache License, Version 2.0 [see LICENSE for details]
+
+
 import torch.nn as nn
 import torch
 from torchvision import models
@@ -39,4 +44,5 @@ def make_layers(cfg, in_channels=3, batch_norm=False, d_rate=1):
         else:
             layers += [conv2d, nn.ReLU(inplace=True)]
         in_channels = v
+
     return nn.Sequential(*layers)  
