@@ -1,3 +1,7 @@
+# ------------------------------------------------------------------------
+# Modifications:
+# Copyright (c) 2026 xyjia. All rights reserved.
+# ------------------------------------------------------------------------
 # Copyright (c) Facebook, Inc. and its affiliates. All Rights Reserved
 """
 Train and eval functions used in main.py
