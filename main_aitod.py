@@ -1,7 +1,3 @@
-# ------------------------------------------------------------------------
-# DQ-DETR
-# Copyright (c) 2022 IDEA. All Rights Reserved.
-# ------------------------------------------------------------------------
 import argparse
 import datetime
 import json
