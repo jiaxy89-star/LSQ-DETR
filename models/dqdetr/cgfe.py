@@ -1,7 +1,3 @@
-# DQ-DETR
-# Copyright (c) 2022 IDEA. All Rights Reserved.
-# Licensed under the Apache License, Version 2.0 [see LICENSE for details]
-
 # Modified from https://github.com/Jongchan/attention-module
 import torch
 import math
@@ -174,3 +170,4 @@ class MultiScaleFeature(nn.Module):
             x_out.append(x)
 
         return x_out
+
