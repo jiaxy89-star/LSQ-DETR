@@ -1,5 +1,5 @@
 # ------------------------------------------------------------------------
-# Modifications:
+# Modifications: criterion.set_epoch(epoch)
 # Copyright (c) 2026 xyjia. All rights reserved.
 # ------------------------------------------------------------------------
 # Copyright (c) Facebook, Inc. and its affiliates. All Rights Reserved
