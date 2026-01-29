@@ -1,4 +1,6 @@
 # LSQ-DETR
+[![DOI](https://zenodo.org/badge/1144822364.svg)](https://doi.org/10.5281/zenodo.18410583)
+
 Official implementation of LSQ-DETR
 
 > **Associated Manuscript**: "LSQ-DETR:Layered and Scale-aware Query DETR for Tiny Object Detection"
