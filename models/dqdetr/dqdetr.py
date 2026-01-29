@@ -1,5 +1,5 @@
 # ------------------------------------------------------------------------
-# Modifications:
+# Modifications:scale_weights_loss
 # Copyright (c) 2026 jiaxy. All rights reserved.
 # ------------------------------------------------------------------------
 # DINO
