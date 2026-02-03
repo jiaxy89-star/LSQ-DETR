@@ -3,19 +3,17 @@
 
 Official implementation of LSQ-DETR
 
-> **Associated Manuscript**: "LSQ-DETR:Layered and Scale-aware Query DETR for Tiny Object Detection"
+> **Associated Manuscript**: "Boosting Tiny Object Detection Performance via Stratified Query Allocation and Weighted Loss Strategies"
 
 > **Submitted to *The Visual Computer* (2026)**
 
 > **Authors**: Xuyang Jia, Junfen Chen,Yi Wang, Bojun Xie
 
 # Introduction
-Tiny object detection remains a challenging task in computer vision due to the extremely limited pixel footprint and weak discriminative features of such objects. To address these issues, we propose LSQ-DETR, a novel detection framework that integrates a layered Top-K query strategy and a scale-weighted loss scheme to significantly improve tiny object detection performance. The layered Top-K query strategy distributes detection queries proportionally across multi-scale feature layers, thereby optimizing query utilization and enhancing cross-level feature collaboration. Meanwhile, the scale-weighted loss explicitly emphasizes smaller objects during training by adjusting gradient contributions according to object scale, leading to improved localization accuracy and recall. Extensive experiments on the AI-TOD-v2 and VisDrone benchmarks show consistent improvements: our method achieves a +0.4% mAP gain on AI-TOD-v2 and a +0.3% mAP gain on VisDrone, without increasing model complexity or computational overhead.
+Tiny object detection presents significant challenges in computer vision due to limited pixel footprints and inherent weaknesses in feature representation. This study introduces LSQ-DETR, a novel method leveraging a layered Top-K query strategy and a scale-weighted loss scheme to enhance tiny object detection performance. The layered Top-K query strategy optimizes resource utilization by allocating queries proportionally across feature layers, while the scale-weighted loss prioritizes small objects during training, thereby improving gradient contributions and localization accuracy. Experiments on the AI-TOD and VisDrone datasets demonstrate consistent $mAP$ gains and improved recall for tiny objects without altering model complexity. These results underscore the effectiveness of our approach in addressing the critical challenges of tiny object detection.
 
 # Installation and Get Started
 Required environments:
-
-**Linux**
 
 **Python 3.9+**
 
@@ -47,14 +45,14 @@ Download the pretrained model at Google Drive(https://drive.google.com/file/d/1E
 CUDA_VISIBLE_DEVICES=0,1,2 bash scripts/LSQ.sh /path to your dataset
 ```
 
-# Inference
+# Evaluate
 ```python
 bash scripts/LSQ_eval.sh /path to your dataset /path to your checkpoint
 ```
 # Citation
 ```bibtex
 @article{Jia2026lsq,
-  title={LSQ-DETR:Layered and Scale-aware Query DETR for Tiny Object Detection},
+  title={Boosting Tiny Object Detection Performance via Stratified Query Allocation and Weighted Loss Strategies},
   author={Xuyang Jia and Junfen Chen and Yi Wang and Bojun Xie},
   journal={The Visual Computer},
   year={2026},
